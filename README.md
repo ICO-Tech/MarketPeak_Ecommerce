@@ -125,3 +125,8 @@ After successfully pushing the development branch to GitHub, I switched back to 
 To deploy the latest changes to the live environment, I first pulled the most recent updates from the GitHub repository onto the EC2 production server. After ensuring all changes were successfully retrieved, I reloaded the Apache web server to apply the updates, making the new features and modifications immediately available on the live website.
 ```
 ![](./img/20.pull-command.png)
+
+## Challenges
+```
+One challenge I encountered was when trying to push my local code to the remote repository using the command git push -u origin main. The push failed and returned an error because the default branch on my GitHub repository was named master rather than main. After identifying the mismatch, I modified the command to git push -u origin master, which successfully uploaded the code to the remote repository. This experience highlighted the importance of ensuring branch names are consistent between local and remote repositories.
+```
